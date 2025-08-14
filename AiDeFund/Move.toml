@@ -1,0 +1,11 @@
+[package]
+name = "AiDeFund"
+version = "1.0.0"
+
+[addresses]
+# Make sure this is the address from your `aptos init` step
+aidefund_addr = "0xbefdd983391e6b4c1fe18ec63c2556e3cdbe83e7534f2eda547267b767775182"
+
+# ADD THIS ENTIRE DEPENDENCIES SECTION
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework", rev = "devnet" }
